@@ -20,7 +20,7 @@ const Review = ({
       <br />
       <div className="review-body">
       {multimedia !== null ?
-        <img className="review-cover" src={multimedia.src} alt={headline} /> : null
+        <img className="review-cover" src={multimedia.src} alt={headline} title={headline}/> : null
         }
         <blockquote className="review-summary">
           {summary_short}
@@ -29,6 +29,7 @@ const Review = ({
           Click here to read
         </a>
       </div>
+      <hr />
     </div>
   )
 };
